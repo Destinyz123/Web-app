@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+        <title>แบบฟอร์ม</title>
+                
+    </head>
+    <style>
+        table, th , td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+    </style>
+    <body>
+        <form method="post" action="test.php" name="myForm">
+            <table>
+                <tr>
+                  <th style="text-align: left;">FirstName : </th>
+                  <th style="width: 30%;"><input type="text" name="firstname"></th>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">LastName : </th>
+                  <th style="width: 10%;"><input type="text" name="lastname"></th>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Nickname : </th>
+                  <th style="width: 30%;"><input type="text" name="nickname"></th>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Phone Number : </th>
+                    <th style="width: 30%;"><input type="password" name="phnum"></th>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Address : </th>
+                    <th style="width: 30%;"><textarea rows="4" cols="20" name="details"></textarea></th>
+                  </tr>
+                <tr>
+                    <th style="width: 50%;">Men :<input type="checkbox" name="men"></th>
+                    <th style="width: 50%;">Women :<input type="checkbox" name="women"></th>
+                </tr>
+                <tr>
+                    <th style="text-align: left;">Faculty : </th>
+                    <th><select name="Faculty">
+                        <option value="chem">Chemistry</option>
+                        <option value="it">IT</option>
+                        <option value="math">Math</option>
+                        <option value="comsci">CS</option>
+                        <option value="bio">Biology</option>
+                        <option value="stat">Stat</option>
+                        <option value="micro">Micro</option>
+                        </select></th>
+                </tr>
+              </table><br>
+            <input type="submit" value="send">
+            <input type="reset" value="clear">
+        </form>
+    </body>
+</html>
